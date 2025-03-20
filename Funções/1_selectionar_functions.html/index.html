@@ -1,0 +1,137 @@
+```
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <button onclick="dizerOla()">Diga Olá!</button>
+
+  <button onclick="aplicarEstilo()">Aplicar Estilo</button>
+
+  <button onclick="aumentarFonte()">Aumentar Fonte</button>
+
+  <button onclick="reduzirFonte()">Reduzir Fonte</button>
+
+  <button onclick="aplicarPurple()">Aplicar cor Purple</button>
+
+  <button onclick="aplicarRed()">Aplicar cor Red</button>
+
+  <button onclick="aplicarBlue()">Aplicar cor Blue</button>
+
+  <button onclick="aumentarMargens()">Aumentar Margens</button>
+
+  <button onclick="reduzirMargens()">Reduzir Margens</button>
+
+  
+
+  <h1>Etec Sales Gomes</h1>
+
+  
+
+  <script>
+
+    let font_size = 12;
+
+    let titulo = document.querySelector('h1');
+
+    let mar_gin = 3
+
+  
+
+    function aplicarPurple(){
+
+      titulo.style.backgroundColor = 'purple';
+
+    }
+
+    function aplicarRed(){
+
+      titulo.style.backgroundColor = 'blue';
+
+    }
+
+    function aplicarBlue(){
+
+      titulo.style.backgroundColor = 'red';
+
+    }
+
+  
+
+    function aumentarMargens(){
+
+    mar_gin = mar_gin + 10;
+
+    aplicarMargin();
+
+    }
+
+  
+
+    function reduzirMargens(){
+
+    mar_gin = mar_gin - 10;
+
+    aplicarMargin();
+
+    }
+
+  
+
+    function aplicarMargin(){
+
+      titulo.style.margin = mar_gin + 'px';
+
+    }
+
+  
+
+    function aplicarSize(){
+
+      titulo.style.fontSize = font_size + 'px';
+
+    }
+
+  
+
+    function dizerOla(){
+
+      alert('Olá!');
+
+    }
+
+  
+
+    function aplicarEstilo(){
+
+      let titulo = document.querySelector('h1');
+
+    titulo.style.backgroundColor = 'purple';
+
+    titulo.style.fontSize = '64px';
+
+    titulo.style.fontFamily = 'Comic Sans MS';
+
+    titulo.style.marginTop = '100px';
+
+    console.log(titulo);
+
+    }
+
+  </script>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="addVeiculo1()">Adicionar Fusca</button>
+    <button onclick="addVeiculo2()">Adicionar Ferrari</button>
+    <button onclick="addVeiculo3()">Adicionar Lamborghini</button>
+    <button onclick="addVeiculo4()">Adicionar Mercedes</button>
+    
+    <div id="estacionamento"></div>
+    
+    <script>
+        function addVeiculo1(){
+            
+            let veiculo_1 = document.createElement('h1');
+            veiculo_1.innerText = 'Fusca';
+            veiculo_1.style.color = 'white';
+            veiculo_1.style.backgroundColor = 'purple';
+            veiculo_1.style.fontSize = '28px';
+            veiculo_1.style.fontFamily = 'Impact';
+            
+            document.querySelector('#estacionamento').appendChild(veiculo_1);
+            document.querySelector('#estacionamento').appendChild(pas1);
+        }
+
+        function addVeiculo2(){
+            
+            let veiculo_2 = document.createElement('h1');
+            veiculo_2.innerText = 'Ferrari';
+            veiculo_2.style.color = 'black'
+            veiculo_2.style.background = 'yellow'
+            veiculo_2.style.fontSize = '28px';
+            veiculo_2.style.fontFamily = 'Ferro Rosso';
+
+            let imagem = document.createElement('img');
+            imagem.setAttribute('src', 'https://http2.mlstatic.com/D_NQ_NP_914200-MLA80374200801_112024-B.webp');
+            
+            document.querySelector('#estacionamento').appendChild(veiculo_2);
+            document.querySelector('#estacionamento').appendChild(pas2);
+        }
+        function addVeiculo3(){
+            
+            let veiculo_3 = document.createElement('h1');
+            veiculo_3.innerText = 'Lamborghini';
+            veiculo_3.style.color = 'gold'
+            veiculo_3.style.background = 'black'
+            veiculo_3.style.fontSize = '28px';
+            veiculo_3.style.fontFamily = 'Ferro Rosso';
+
+            let imagem = document.createElement('img');
+            imagem.setAttribute('src', 'https://cdn.awsli.com.br/2571/2571273/produto/210230396/lamborghini-aventador-limited-edition-lb-works-118-autoart-preto-871a7b9f.jpg');
+            
+
+            let pas3 = document.createElement('img');
+            pas3.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtUppZxnAfT2H24xFXx1QfiBzI2u0FFC0_kTQ2b7WXIyVu-BNbE00W9hofN8jaeh4i-LI&usqp=CAU');
+            
+            document.querySelector('#estacionamento').appendChild(veiculo_3);
+            document.querySelector('#estacionamento').appendChild(imagem);
+            document.querySelector('#estacionamento').appendChild(pas3);
+        }
+        function addVeiculo4(){
+            
+            let veiculo_4 = document.createElement('h1');
+            veiculo_4.innerText = 'Mercedes';
+            veiculo_4.style.color = 'gray'
+            veiculo_4.style.background = 'black'
+            veiculo_4.style.fontSize = '28px';
+            veiculo_4.style.fontFamily = 'Ferro Rosso';
+
+            let imagem = document.createElement('img');
+            imagem.setAttribute('src', 'https://http2.mlstatic.com/D_NQ_NP_914200-MLA80374200801_112024-B.webp');
+            
+            document.querySelector('#estacionamento').appendChild(veiculo_4);
+            document.querySelector('#estacionamento').appendChild(pas);
+        }
+        </script>
+</body>
+</html>
