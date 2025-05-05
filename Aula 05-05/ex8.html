@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    <script>
+        let escola = [];
+
+        escola['professores'] = [];
+        escola['professores']['a'] = 'Diogo';
+        escola['professores']['b'] = 'Gabriel';
+        escola['professores'].unshift('Felipe');
+
+        escola['alunos'] = [];
+        escola['alunos']['a'] = 'Bruce';
+        escola['alunos']['b'] = 'Robin';
+        escola['alunos'].unshift('Jason');
+
+        escola['materias'] = [];
+        escola['materias']['a'] = 'DS';
+        escola['materias']['b'] = 'PAM';
+        escola['materias'].unshift('BD');
+
+        escola.forEach(elemento => {
+            console.log(elemento);
+        })
+
+        
+    </script>
+</body>
+</html>
