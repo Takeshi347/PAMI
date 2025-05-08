@@ -7,22 +7,21 @@
 </head>
 <body>
     <script>
-        let valores = [10, 20, 30, 40, 50];
-        valores[0];
-        valores[1];
-        valores[2];
-        valores[3];
-        valores[4];
 
-        const encontrado = valores.indexOf(10);
-
-        if (encontrado)
-        console.log('Valor encontrado na posição: ' +encontrado);
-
-
+        let array = [10, 20, 30, 40, 50];
+        
+        // array.shift();
+    
+        
+       lista = array.indexOf(10);
+    
+    console.log(lista);
+    
+       if(lista == -1)
+        console.log('Numero não existe na lista');
         else
-        console.log('Valor não encontrado');
+        console.log('Numero encontrado!');
 
-    </script>
+        </script>
 </body>
-</html>
+</html> 
