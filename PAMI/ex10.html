@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens</title>
+</head>
+
+<body>
+    <div id="exibir"></div>
+
+    <script>
+        let personagem = [
+            personagem1 = [
+                nome = 'Bruce Wayne',
+                idade = 30,
+                peso = 80,
+                altura = 1.80,
+                poder = 'Riqueza',
+                profissao = 'Empresário',
+                foto = 'https://i.pinimg.com/736x/f9/56/c8/f956c82fa9641f1b3291327fe3fc40ca.jpg'
+            ],
+            personagem2 = [
+                nome = 'Barbara Gordon',
+                idade = 2,
+                peso = 88,
+                altura = 1.88,
+                poder = 'Memória Eidética',
+                profissao = 'Bibliotecaria',
+                foto = 'https://i.pinimg.com/736x/55/a6/77/55a6770b4a106f55254897581f61ac8a.jpg'
+            ],
+            personagem3 = [
+                nome = 'Alfred Pennyworth',
+                idade = 56,
+                peso = 87,
+                altura = 1.90,
+                poder = 'Mimetismo (Voz)',
+                profissao = 'Mordomo',
+                foto = 'https://s2-techtudo.glbimg.com/zsEBhbttdj7Flpj0M77553GHe3I=/0x0:620x400/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/u/A/Zqra5pRD6EpnK6z9MgfQ/2011-10-20-alfred.jpg',
+            ],
+        ];
+
+        personagem.push(personagem4 = [
+            nome = 'Jason Todd',
+            idade = 15,
+            peso = 56,
+            altura = 1.76,
+            poder = 'Cura Avançada',
+            profissao = 'Acrobata de Circo',
+            foto = 'https://i.pinimg.com/736x/c4/fe/4b/c4fe4b021301317cb738449a229e9e3d.jpg'
+        ]);
+        personagem.push(personagem5 = [
+            nome = 'Dick Grayson',
+            idade = 2.019,
+            peso = 78,
+            altura = 1.80,
+            poder = 'Acrobata',
+            profissao = 'Acrobata de Circo',
+            foto = 'https://c4.wallpaperflare.com/wallpaper/194/439/818/nightwing-hd-wallpaper-preview.jpg'
+        ]);
+        personagem.push(personagem6 = [
+            nome = 'Azrael',
+            idade = 45,
+            peso = 90,
+            altura = 2.00,
+            poder = 'Fisiologia Aprimorada',
+            profissao = 'Policial',
+            foto = 'https://i.pinimg.com/736x/23/db/99/23db99318337766d7293fe4b6a2eb938.jpg'
+        ]);
+        personagem.forEach(element => {
+            let nome = document.createElement('p')
+            nome.innerText = 'Nome: ' + element[0];
+            exibir.appendChild(nome);
+
+            let idade = document.createElement('p')
+            idade.innerText = 'Idade: ' + element[1] + ' anos';
+            exibir.appendChild(idade);
+
+            let peso = document.createElement('p')
+            peso.innerText = 'Peso: ' + element[2] + 'kg';
+            exibir.appendChild(peso);
+
+            let altura = document.createElement('p')
+            altura.innerText = 'Altura: ' + element[3] + 'm';
+            exibir.appendChild(altura);
+
+            let poder = document.createElement('p')
+            poder.innerText = 'Poder: ' + element[4];
+            exibir.appendChild(poder);
+
+            let profissao = document.createElement('p')
+            profissao.innerText = 'Profissão: ' + element[5];
+            exibir.appendChild(profissao);
+
+            let fotoT = document.createElement('p')
+            exibir.appendChild(fotoT);
+
+            let foto = document.createElement('img')
+            foto.src = element[6];
+            exibir.appendChild(foto);
+
+            let espaco = document.createElement('p')
+            espaco.innerHTML = '<br>';
+            exibir.appendChild(espaco);
+        });
+
+    </script>
+    <style>
+        img {
+            width: 500px;
+            height: auto;
+        }
+    </style>
+</body>
+</html>
