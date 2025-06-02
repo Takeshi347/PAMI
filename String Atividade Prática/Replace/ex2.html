@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+<script>
+/* Faça um programa que irá substituir 
+os sobrenomes por “Paz” do array abaixo. Faça uso do foreach.*/
+
+let alunos = [
+    "Pombinha da Silva",
+    "Barraqueira da Silva",
+    "Discórdia da Silva"
+];
+
+alunos.forEach((nome, i) => {
+    alunos[i] = nome.replace(/ .+$/, " Paz");
+});
+
+console.log(alunos);
+
+</script>
+</body>
+</html>
