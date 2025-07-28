@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const veiculos = [
+  {
+    nome: "Toyota Corolla",
+    ano: 2021,
+    preco: 95000,
+    modelo: "XEi",
+    combustivel: "Gasolina"
+  },
+  {
+    nome: "Honda Civic",
+    ano: 2020,
+    preco: 89000,
+    modelo: "EXL",
+    combustivel: "Flex"
+  },
+  {
+    nome: "Volkswagen Gol",
+    ano: 2019,
+    preco: 45000,
+    modelo: "1.6 MSI",
+    combustivel: "Etanol"
+  },
+  {
+    nome: "Fiat Argo",
+    ano: 2022,
+    preco: 62000,
+    modelo: "Drive",
+    combustivel: "Flex"
+  },
+  {
+    nome: "Chevrolet Onix",
+    ano: 2023,
+    preco: 78000,
+    modelo: "LT Turbo",
+    combustivel: "Gasolina"
+  },
+  {
+    nome: "Renault Kwid",
+    ano: 2021,
+    preco: 48000,
+    modelo: "Zen",
+    combustivel: "Flex"
+  },
+  {
+    nome: "Ford Ka",
+    ano: 2020,
+    preco: 47000,
+    modelo: "SE Plus",
+    combustivel: "Etanol"
+  },
+  {
+    nome: "Hyundai HB20",
+    ano: 1945,
+    preco: 85000,
+    modelo: "Comfort Plus",
+    combustivel: "Gasolina"
+  },
+  {
+    nome: "Peugeot 208",
+    ano: 2022,
+    preco: 78000,
+    modelo: "Allure",
+    combustivel: "Flex"
+  },
+  {
+    nome: "Nissan Versa",
+    ano: 2025,
+    preco: 92000,
+    modelo: "Advance",
+    combustivel: "Gasolina"
+  }
+];
+
+    let veiculos_seminovos = veiculos.filter(veiculo => veiculo.ano > 2000 && veiculo.ano <= 2024);
+    let veiculos_novos = veiculos.filter(veiculo => veiculo.ano >= 2025);
+    let veiculos_classicos = veiculos.filter(veiculo => veiculo.ano <= 2000);
+    let veiculo_gasolina;
+    let veiculo_baixo_valor; // <= 10k
+
+    console.log(veiculos_seminovos);
+    console.log(veiculos_novos);
+    console.log(veiculos_classicos);
+
+    </script>
+</body>
+</html>
