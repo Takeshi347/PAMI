@@ -1,0 +1,323 @@
+<script>
+    const personagens = [
+  {
+    nome: "Clotildes Pimentel",
+    idade: 82,
+    anoNascimento: 1943,
+    profissao: "Caçadora de fantasmas aposentada",
+    salario: 2100.00,
+    peso: 63,
+    altura: 1.55,
+    curiosidade: "Já venceu o Gasparzinho num debate"
+  },
+  { 
+    nome: "Zé Bolacha",
+    idade: 41,
+    anoNascimento: 1984,
+    profissao: "Provador de colchões",
+    salario: 3750.50,
+    peso: 97,
+    altura: 1.72,
+    curiosidade: "Dormiu durante o próprio casamento"
+  },
+  {
+    nome: "Tina Wi-Fi",
+    idade: 28,
+    anoNascimento: 1997,
+    profissao: "Influenciadora digital de pombos",
+    salario: 6120.00,
+    peso: 52,
+    altura: 1.65,
+    curiosidade: "Tem 1 milhão de seguidores… todos pombos"
+  },
+  {
+    nome: "Gustavão Tronco",
+    idade: 33,
+    anoNascimento: 1992,
+    profissao: "Dublê de árvore",
+    salario: 1980.30,
+    peso: 108,
+    altura: 1.89,
+    curiosidade: "Já foi confundido com um poste"
+  },
+  {
+    nome: "Neide Suvaco",
+    idade: 50,
+    anoNascimento: 1975,
+    profissao: "Consultora de perfumes alternativos",
+    salario: 3225.40,
+    peso: 73,
+    altura: 1.60,
+    curiosidade: "Criou perfume com essência de cebola"
+  },
+  {
+    nome: "Paulo Jiló",
+    idade: 39,
+    anoNascimento: 1986,
+    profissao: "Degustador de comida ruim",
+    salario: 4100.00,
+    peso: 68,
+    altura: 1.75,
+    curiosidade: "É alérgico a tudo que é gostoso"
+  },
+  {
+    nome: "Dona Jujuba",
+    idade: 75,
+    anoNascimento: 1950,
+    profissao: "Vidente aposentada",
+    salario: 2150.00,
+    peso: 58,
+    altura: 1.50,
+    curiosidade: "Errou todas as previsões da vida"
+  },
+  {
+    nome: "Marquinho Tecla",
+    idade: 25,
+    anoNascimento: 2000,
+    profissao: "Pianista de elevador",
+    salario: 2940.00,
+    peso: 70,
+    altura: 1.68,
+    curiosidade: "Toca músicas tristes nas festas"
+  },
+  {
+    nome: "Zilda Bacana",
+    idade: 60,
+    anoNascimento: 1965,
+    profissao: "Coach de gatos",
+    salario: 2890.00,
+    peso: 80,
+    altura: 1.58,
+    curiosidade: "Seu gato nunca obedeceu"
+  },
+  {
+    nome: "Roberto Espinafre",
+    idade: 22,
+    anoNascimento: 2003,
+    profissao: "Bodybuilder vegetariano",
+    salario: 3480.00,
+    peso: 85,
+    altura: 1.78,
+    curiosidade: "É inimigo mortal da couve"
+  },
+  {
+    nome: "Betão Relâmpago",
+    idade: 46,
+    anoNascimento: 1979,
+    profissao: "Corredor de carroça",
+    salario: 3200.00,
+    peso: 110,
+    altura: 1.80,
+    curiosidade: "Já ultrapassou uma bicicleta"
+  },
+  {
+    nome: "Aninha Trombeta",
+    idade: 34,
+    anoNascimento: 1991,
+    profissao: "Sopradora de velas",
+    salario: 2700.00,
+    peso: 60,
+    altura: 1.63,
+    curiosidade: "Odeia aniversários"
+  },
+  {
+    nome: "Kiko Wi-Fi",
+    idade: 19,
+    anoNascimento: 2006,
+    profissao: "Técnico de internet",
+    salario: 2100.00,
+    peso: 68,
+    altura: 1.70,
+    curiosidade: "Resolve tudo por telefone"
+  },
+  {
+    nome: "Rute Catapimba",
+    idade: 44,
+    anoNascimento: 1981,
+    profissao: "Domadora de formigas",
+    salario: 3500.00,
+    peso: 66,
+    altura: 1.62,
+    curiosidade: "Treinou um formigueiro para fazer fila"
+  },
+  {
+    nome: "Lelé das Coves",
+    idade: 38,
+    anoNascimento: 1987,
+    profissao: "Vendedor de couve em alta velocidade",
+    salario: 3890.90,
+    peso: 95,
+    altura: 1.69,
+    curiosidade: "Entregou couve até de patinete"
+  },
+  {
+    nome: "Tião Carambola",
+    idade: 61,
+    anoNascimento: 1964,
+    profissao: "Fabricante de calçados para avestruzes",
+    salario: 4800.00,
+    peso: 90,
+    altura: 1.73,
+    curiosidade: "Tem calçado até para flamingo"
+  },
+  {
+    nome: "Mara Marmota",
+    idade: 27,
+    anoNascimento: 1998,
+    profissao: "Fotógrafa de sombras",
+    salario: 3200.00,
+    peso: 55,
+    altura: 1.64,
+    curiosidade: "Sua sombra é mais famosa que ela"
+  },
+  {
+    nome: "Josias Pamonha",
+    idade: 52,
+    anoNascimento: 1973,
+    profissao: "Consultor de milho",
+    salario: 3900.00,
+    peso: 102,
+    altura: 1.76,
+    curiosidade: "Usa gel de milho no cabelo"
+  },
+  {
+    nome: "Lindaura do Gás",
+    idade: 58,
+    anoNascimento: 1967,
+    profissao: "Motogirl de botijão",
+    salario: 3150.00,
+    peso: 83,
+    altura: 1.55,
+    curiosidade: "Faz entrega com drift"
+  },
+  {
+    nome: "Seu Reginaldo",
+    idade: 70,
+    anoNascimento: 1955,
+    profissao: "Mestre em reclamar",
+    salario: 0.00,
+    peso: 78,
+    altura: 1.67,
+    curiosidade: "Reclama até de elogios"
+  },
+  {
+    nome: "Belinha Byte",
+    idade: 31,
+    anoNascimento: 1994,
+    profissao: "Desenvolvedora de memes",
+    salario: 9100.00,
+    peso: 59,
+    altura: 1.68,
+    curiosidade: "Criou o meme do pão voador"
+  },
+  {
+    nome: "Olívio Batata",
+    idade: 36,
+    anoNascimento: 1989,
+    profissao: "Crítico de frituras",
+    salario: 5200.00,
+    peso: 112,
+    altura: 1.72,
+    curiosidade: "Dá nota para batatas no Instagram"
+  },
+  {
+    nome: "Valéria Tremedeira",
+    idade: 48,
+    anoNascimento: 1977,
+    profissao: "Teste de escadas rolantes",
+    salario: 2980.00,
+    peso: 72,
+    altura: 1.66,
+    curiosidade: "Caiu 8 vezes no mesmo dia"
+  },
+  {
+    nome: "Carlinhos Pipoca",
+    idade: 26,
+    anoNascimento: 1999,
+    profissao: "Jogador profissional de esconde-esconde",
+    salario: 6100.00,
+    peso: 64,
+    altura: 1.74,
+    curiosidade: "Está escondido desde 2020"
+  },
+  {
+    nome: "Jurema das Quantas",
+    idade: 43,
+    anoNascimento: 1982,
+    profissao: "Contadora de grãos de areia",
+    salario: 2500.00,
+    peso: 58,
+    altura: 1.57,
+    curiosidade: "Parou de contar no grão 4.512.000"
+  },
+  {
+    nome: "Zelito do Pneu",
+    idade: 55,
+    anoNascimento: 1970,
+    profissao: "Engraxador de pneus",
+    salario: 2700.00,
+    peso: 91,
+    altura: 1.68,
+    curiosidade: "Faz arte com graxa"
+  },
+  {
+    nome: "Naná Biscoito",
+    idade: 29,
+    anoNascimento: 1996,
+    profissao: "Degustadora de biscoito recheado",
+    salario: 3400.00,
+    peso: 61,
+    altura: 1.61,
+    curiosidade: "Come o recheio por último"
+  },
+  {
+    nome: "Durval Sacola",
+    idade: 40,
+    anoNascimento: 1985,
+    profissao: "Organizador de sacolas plásticas",
+    salario: 2900.00,
+    peso: 87,
+    altura: 1.75,
+    curiosidade: "Tem 5 mil sacolas em casa"
+  },
+  {
+    nome: "Giselda Pão-Doce",
+    idade: 37,
+    anoNascimento: 1988,
+    profissao: "Padeiróloga",
+    salario: 4500.00,
+    peso: 70,
+    altura: 1.70,
+    curiosidade: "Conversa com fornadas"
+  }
+];
+
+/* filtrar todos os personagens com idade superior a 50 anos */
+let filtro_50 = personagens.filter(personagem => personagem.idade >= 50);
+
+/* filtrar todos os personagens com idade entre 20 e 30 anosw */
+let filtro_idade = personagens.filter(personagem => personagem.idade >= 20 && personagem.idade <= 30);
+console.log(filtro_idade);
+
+// filtrar todos os personagens que são 1400.
+let filtro_pobre = personagens.filter(personagem => personagem.salario <= 1400);
+console.log(filtro_pobre);
+
+// filtrar todos os personagens que são rico > 5000.
+let filtro_rico = personagens.filter(personagem => personagem.salario >= 5000);
+console.log(filtro_rico);
+
+// filtrar todos os personagens nascidos em 1970 ou 1996
+let filtro_nascimento = personagens.filter(personagem => personagem.anoNascimento >= 1970 && personagem.anoNascimento <= 1996);
+console.log(filtro_nascimento);
+
+// filtrar todos os personagens que estão acima do peso
+let filtro_acima = personagens.filter(function(personagem){
+    if(personagem.peso/personagem.altura**2 <= 25 && personagem.peso/personagem.altura**2 <=29){
+        return ("acima do peso");
+    } else {
+    
+    }
+});
+
+</script>
