@@ -1,0 +1,32 @@
+<script>
+    // const numeros1 = [1, 2, 3];
+    // console.log(...numeros1)
+    // Saída: 1, 2, 3
+    
+    const numeros = [1, 2, 3, 4, 5];
+
+    const todos_positivos = numeros.every(numero => numero > 0);
+
+    console.log(todos_positivos);
+    //Saída: true
+
+    // EXemplo 2
+    const nomes = ['Ana', 'Carlos', 'Beatriz'];
+
+    const mais_de_tres_letras = nomes.every(nome => nome.lenght > 3)
+
+    console.log(mais_de_tres_letras)
+    //Saída: false
+
+    //Exemplo 3
+    const alunos = [
+        {nome: 'Joaozin', aprovado: true},
+        {nome: 'Mariazin', aprovado: true},
+        {nome: 'Marquion', aprovado: true},
+    ];
+
+    const todos_aprovados = alunos.every(aluno => aluno.aprovado);
+
+    console.log(todos_aprovados);
+    //Saída: true
+</script>
